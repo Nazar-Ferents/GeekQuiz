@@ -1,5 +1,5 @@
-import {renderQuiz} from "./quiz.js";
-import {renderWelcome} from "./welcome.js";
+import {renderQuiz} from "./quizPage.js";
+import {renderWelcome} from "./welcomePage.js";
 import {renderUniverses} from "./universesPage.js";
 import {app} from "../app.js";
 import {resetScore} from "../data/state.js";
@@ -25,10 +25,10 @@ export function renderResults (scoreResult,universe){
     resultElement.innerText = `${result} %`;
     const message = document.createElement("p");
     message.classList.add("message");
-    if (result >= 95 ){
+    if (result >= 90 ){
         message.textContent = level.legend
     }
-    else if (result >= 80 && result < 95 ){
+    else if (result >= 80 && result < 90 ){
         message.textContent = level.perfect
     }
     else if (result >= 50 && result < 80 ){

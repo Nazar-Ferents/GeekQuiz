@@ -4,6 +4,7 @@ const questionsHarryPotter = [
     {
         questionTitle: "Як звали сову Гаррі Поттера?",
         answers: ["Гедвіґа", "Ерол", "Фоукс", "Крукшенкс"],
+        image:'https://contentful.harrypotter.com/usf1vwtuqyxm/lbxISOVdOS64U428cc6mW/d4f3c826f6fc0f6b856c5e62c1be61c4/WB_F1_Hedwig_HarryHoldsHedwig_1383R_v2.jpg',
         correct: 0
     },
     {
@@ -14,6 +15,7 @@ const questionsHarryPotter = [
             "Захист від темних мистецтв",
             "Догляд за магічними істотами"
         ],
+        image:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYvQx93i-8lnEdqx5vak-rJQ_Kd_Kx4iR0IJUtsIGPAizE_G18xU3T1bts&s=10',
         correct: 2
     },
     {
@@ -24,6 +26,7 @@ const questionsHarryPotter = [
             "Том Редл",
             "Гаррі Поттер"
         ],
+        image:'https://external-preview.redd.it/fanart-chamber-of-secrets-concept-fanart-v0-MGY-IP3fAeImRYtmCbmoPml1c-mgE6IflydmvgIUGTc.jpg?auto=webp&s=6aee902f0f06e88d23a3cfe77fbe6f3bab745cf2',
         correct: 1
     },
     {
@@ -34,6 +37,7 @@ const questionsHarryPotter = [
             "Заєць",
             "Кішка"
         ],
+        image:'https://miro.medium.com/1*Y0852N43DttESoBJFihWOA.jpeg',
         correct: 0
     },
     {
@@ -44,6 +48,7 @@ const questionsHarryPotter = [
             "Браян",
             "Усі перелічені"
         ],
+        image:'https://contentful.harrypotter.com/usf1vwtuqyxm/76Cxg2JRB99z3CfTmt3mNN/c9f29d650579dbe5c7fc80da01559b47/WB-half-blood-prince-dumbledore.jpg',
         correct: 3
     },
     {
@@ -54,6 +59,7 @@ const questionsHarryPotter = [
             "Медальйон",
             "Діадема"
         ],
+        image:'https://games.24tv.ua/resources/photos/news/202401/2464529.jpg?v=1704212086000',
         correct: 0
     },
     {
@@ -64,6 +70,7 @@ const questionsHarryPotter = [
             "Герміона",
             "Невіл"
         ],
+        image:'https://wallpaperaccess.com/full/276667.png',
         correct: 1
     },
     {
@@ -74,6 +81,7 @@ const questionsHarryPotter = [
             "Драко Мелфой",
             "Северус Снейп"
         ],
+        image:'https://fsn1.your-objectstorage.com/juliens-images/204718/535072.jpg',
         correct: 2
     },
     {
@@ -84,6 +92,7 @@ const questionsHarryPotter = [
             "Медальйон Слизерина",
             "Чаша Пуфендуя"
         ],
+        image:'https://wallpaperaccess.com/full/2341193.jpg',
         correct: 1
     },
     {
@@ -94,6 +103,7 @@ const questionsHarryPotter = [
             "Барті Крауч",
             "Міллісента Багнолд"
         ],
+        image:'https://wallpaperaccess.com/full/22918.jpg',
         correct: 0
     }
 ]

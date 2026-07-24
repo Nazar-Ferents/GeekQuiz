@@ -1,5 +1,5 @@
 
-import {renderWelcome} from "./pages/welcome.js";
+import {renderWelcome} from "./pages/welcomePage.js";
 
 
 

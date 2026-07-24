@@ -1,0 +1,313 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+/*-------------------------GLOBAL------------------------------------------------------*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+
+}
+body{
+    font-family: "Manrope", sans-serif;
+    background-color: #0F172A;
+    min-height: 100vh;
+
+}
+
+#app{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+@keyframes fadeUp {
+    0%{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+/* -------------------------------------WELCOME PAGE------------------------------------- */
+
+
+
+.welcomeWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    font-size: 88px;
+    font-weight: 800;
+    letter-spacing: 4px;
+    color: #F8FAFC;
+    margin-bottom: 24px;
+    animation: fadeUp 0.6s ease-out ;
+
+}
+
+.greeting {
+    white-space: pre-line;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #CBD5E1;
+    text-align: center;
+    max-width: 420px;
+    margin-bottom: 56px;
+    animation: fadeUp 0.6s ease-out ;
+    animation-delay: 0.2s;
+    animation-fill-mode: backwards;
+
+}
+
+.start-button{
+    text-align: center;
+    width: 260px;
+    height: 62px;
+    border-radius: 16px;
+    background-color: #2563EB;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    border: none;
+    transition:
+            transform .25s ease,
+            background-color .25s ease,
+            box-shadow .25s ease;
+    cursor:pointer;
+    animation: fadeUp 0.6s ease-out ;
+    animation-delay: 0.4s;
+    animation-fill-mode: backwards;
+    box-shadow: 0 8px 20px rgba(37,99,235,.25);
+}
+
+.start-button:hover{
+    background-color: #3B82F6;
+    transform:translateY(-2px);
+    box-shadow: 0 14px 28px rgba(37,99,235,.35);
+    letter-spacing: 0.3px;
+
+}
+.start-button:active{
+    transform:translateY(1px);
+    background-color: #1D4ED8;
+    box-shadow: 0 6px 14px rgba(37,99,235,.2);
+}
+
+/* -----------------------------------UNIVERSES PAGE----------------------------------------- */
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+    flex-wrap: wrap;
+}
+
+
+.choose-title{
+
+    font-size: 58px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #F8FAFC;
+
+    margin: 60px 0 12px;
+
+    background: linear-gradient(
+            90deg,
+            #F8FAFC 0%,
+            #93C5FD 45%,
+            #2563EB 100%
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+    text-align: center;
+    animation: fadeUp 0.6s ease-out
+
+}
+
+.choose-subtitle{
+    font-size: 20px;
+    font-weight: 500;
+    color: #94A3B8;
+    text-align: center;
+    max-width: 620px;
+    margin-bottom: 56px;
+    line-height: 1.6;
+    animation: fadeUp 0.6s ease-out ;
+    animation-delay: 0.2s;
+    animation-fill-mode: backwards;
+}
+
+.universeDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    height: 530px;
+    border-radius: 18px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    animation: fadeUp 0.6s ease-out ;
+    animation-delay: 0.4s;
+    animation-fill-mode: backwards;
+    transform: scale(1);
+    transition:
+            transform .35s ease,
+            filter .35s ease,
+            box-shadow .35s ease;
+    user-select: none;
+
+
+
+}
+
+.universeDiv:hover{
+    transform: scale(1.04) translateY(-6px);
+    filter: brightness(1.12) saturate(1.08);
+
+    box-shadow:
+            0 20px 40px rgba(0,0,0,.35);
+
+    z-index: 2;
+}
+
+.universeDiv:active{
+     transform: scale(0.98) translateY(-2px);
+
+     box-shadow:
+             0 10px 20px rgba(0,0,0,.25);
+ }
+
+.img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.overlay{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 24px;
+    background: linear-gradient(
+            to top,
+            rgba(0,0,0,.92) 0%,
+            rgba(0,0,0,.65) 40%,
+            rgba(0,0,0,.25) 75%,
+            rgba(0,0,0,0) 100%
+    );
+
+}
+.universeTitle{
+    width: 70%;
+    flex-wrap: wrap;
+    font-size: 22px;
+    font-weight: 700;
+    color: #F8FAFC;
+    letter-spacing: 1px;
+    text-align: center;
+    text-shadow:
+            0 2px 6px rgba(0,0,0,.45);
+}
+
+.purple{
+    box-shadow:
+            0 0 18px rgba(255, 235, 255, .18),
+            0 0 36px rgba(168, 85, 247, .22),
+            0 0 60px rgba(91, 33, 182, .18);
+}
+
+.purple:hover{
+    box-shadow:
+            0 0 24px rgba(255, 245, 255, .28),
+            0 0 48px rgba(168, 85, 247, .38),
+            0 0 80px rgba(91, 33, 182, .30);
+}
+
+.blue{
+    box-shadow:
+            0 0 16px rgba(226, 232, 240, .16),
+            0 0 34px rgba(59, 130, 246, .20),
+            0 0 58px rgba(30, 64, 175, .16);
+}
+
+.blue:hover{
+    box-shadow:
+            0 0 22px rgba(241, 245, 249, .24),
+            0 0 44px rgba(59, 130, 246, .34),
+            0 0 72px rgba(30, 64, 175, .26);
+}
+
+.orange{
+    box-shadow:
+            0 0 18px rgba(255, 236, 179, .10),
+            0 0 36px rgba(245, 158, 11, .18),
+            0 0 60px rgba(180, 83, 9, .18);
+}
+
+.orange:hover{
+    box-shadow:
+            0 0 24px rgba(255, 244, 214, .16),
+            0 0 48px rgba(245, 158, 11, .30),
+            0 0 82px rgba(180, 83, 9, .28);
+}
+
+.ice{
+    box-shadow:
+            0 0 18px rgba(240, 249, 255, .14),
+            0 0 38px rgba(103, 232, 249, .18),
+            0 0 64px rgba(14, 165, 233, .16);
+}
+
+.ice:hover{
+    box-shadow:
+            0 0 24px rgba(248, 250, 252, .22),
+            0 0 50px rgba(103, 232, 249, .30),
+            0 0 82px rgba(14, 165, 233, .24);
+}
+
+.red{
+    box-shadow:
+            0 0 20px rgba(255, 243, 199, .18),
+            0 0 42px rgba(251, 146, 60, .22),
+            0 0 70px rgba(180, 83, 9, .18);
+}
+
+.red:hover{
+    box-shadow:
+            0 0 28px rgba(255, 248, 220, .28),
+            0 0 56px rgba(251, 146, 60, .36),
+            0 0 92px rgba(180, 83, 9, .28);
+}
+/* =========================
+   QUIZ PAGE
+========================= */
+
+/* =========================
+   RESULTS PAGE
+========================= */

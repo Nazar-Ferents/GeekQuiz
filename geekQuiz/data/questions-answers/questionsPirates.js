@@ -2,13 +2,14 @@
 
 export const questionsPirates = [
     {
-        questionTitle: "Яке прізвище мав Елізабет?",
+        questionTitle: "Яке прізвище мала Елізабет?",
         answers: [
             "Тернер",
             "Спарроу",
             "Свонн",
             "Беккет"
         ],
+        image:'https://wallpaperaccess.com/full/2659146.jpg',
         correct: 2
     },
     {
@@ -19,6 +20,7 @@ export const questionsPirates = [
             "Гіллетт",
             "Гровер"
         ],
+        image:'https://wallpaperaccess.com/full/5767929.jpg',
         correct: 0
     }
     ,
@@ -30,6 +32,7 @@ export const questionsPirates = [
             "Те, чого найбільше бажає власник",
             "Чорну Перлину"
         ],
+        image:'https://wallpaperaccess.com/full/2659186.jpg',
         correct: 2
     },
     {
@@ -40,6 +43,7 @@ export const questionsPirates = [
             "Пронести службу 100 років",
             "Повернути серце"
         ],
+        image:'https://wallpaperaccess.com/full/6475946.jpg',
         correct: 2
     },
     {
@@ -50,6 +54,7 @@ export const questionsPirates = [
             "Гіббс",
             "Рагетті"
         ],
+        image:'https://wallpaperaccess.com/full/2659149.jpg',
         correct: 0
     },
     {
@@ -60,6 +65,7 @@ export const questionsPirates = [
             "Джошамі Гіббс",
             "Норрінгтон"
         ],
+        image:'https://wallpaperaccess.com/full/2659188.jpg',
         correct: 1
     },
     {
@@ -70,6 +76,7 @@ export const questionsPirates = [
             "Мовчазна Марія",
             "Летючий Голландець"
         ],
+        image:'https://wallpaperaccess.com/full/2659180.jpg',
         correct: 0
     },
     {
@@ -80,6 +87,7 @@ export const questionsPirates = [
             "Генрі",
             "Річард"
         ],
+        image:'https://wallpaperaccess.com/full/2659137.jpg',
         correct: 0
     },
     {
@@ -90,16 +98,18 @@ export const questionsPirates = [
             "9",
             "10"
         ],
+        image:'https://wallpaperaccess.com/full/2369158.jpg',
         correct: 2
     },
     {
         questionTitle: "Хто насправді подарував Джеку його знаменитий компас?",
         answers: [
-            "Барбосса",
+            "Він його знайшов серед скарбів",
             "Тіа Дальма",
             "Капітан Салазар",
-            "Тінг Шао"
+            "Деві Джонс"
         ],
+        image:'https://wallpaperaccess.com/full/1103973.jpg',
         correct: 1
     }
 ]

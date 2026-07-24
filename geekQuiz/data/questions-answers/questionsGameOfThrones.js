@@ -9,6 +9,7 @@ export const questionsGameOfThrones = [
             "Зима близько",
             "Ми не сіємо"
         ],
+        image:'https://wallpaperaccess.com/full/529513.png',
         correct: 2
     },
     {
@@ -19,6 +20,7 @@ export const questionsGameOfThrones = [
             "Серцежер",
             "Світлоносний"
         ],
+        image:'https://wallpaperaccess.com/full/381000.jpg',
         correct: 0
     },
     {
@@ -27,8 +29,9 @@ export const questionsGameOfThrones = [
             "Роберта Баратеона",
             "Ейріса II Таргарієна",
             "Рейгара Таргарієна",
-            "Робба Старка"
+            "Рікарда Старка"
         ],
+        image:'https://wallpaperaccess.com/full/840302.jpg',
         correct: 1
     },
     {
@@ -39,6 +42,7 @@ export const questionsGameOfThrones = [
             "Хроніки Вестеросу",
             "Історія Семи Королівств"
         ],
+        image:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSIrr-04o0UVLPMDQgAGc3viFBnpZWpkJ8AdBOgAozThfMrGFgkK2wid0w&s=10',
         correct: 0
     },
     {
@@ -49,6 +53,7 @@ export const questionsGameOfThrones = [
             "Еймон Таргарієн",
             "Джейхеріс Таргарієн"
         ],
+        image:'https://wallpaperaccess.com/full/381084.png',
         correct: 0
     },
     {
@@ -59,6 +64,7 @@ export const questionsGameOfThrones = [
             "Вовк",
             "Орел"
         ],
+        image:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6KMEyPaXtuL8rt6ZCamtGuuuINtD7HLkDmPYOZNkef8VrNDYcyVvNKXdN&s=10',
         correct: 0
     },
     {
@@ -69,6 +75,7 @@ export const questionsGameOfThrones = [
             "Німерія",
             "Літо"
         ],
+        image:'https://wallpaperaccess.com/full/850047.jpg',
         correct: 1
     },
     {
@@ -79,6 +86,7 @@ export const questionsGameOfThrones = [
             "Бронн",
             "Пес"
         ],
+        image:'https://wallpaperaccess.com/full/1281816.jpg',
         correct: 1
     },
     {
@@ -89,6 +97,7 @@ export const questionsGameOfThrones = [
             "Станніс Баратеон",
             "Варіс"
         ],
+        image:'https://wallpaperaccess.com/full/25544.jpg',
         correct: 1
     },
     {
@@ -99,6 +108,7 @@ export const questionsGameOfThrones = [
             "Базиліскова кров",
             "Отрута Мантікора"
         ],
+        image:'https://wallpaperaccess.com/full/840249.jpg',
         correct: 1
     }
 

@@ -11,6 +11,7 @@ export const questionsMarvel = [
             "Доктор Стрендж",
             "Тор"
         ],
+        image:'https://wallpaperaccess.com/full/13454.jpg',
         correct: 0
     },
 
@@ -23,6 +24,7 @@ export const questionsMarvel = [
             "Камінь Часу",
             "Камінь Розуму"
         ],
+        image:'https://wallpaperaccess.com/full/447701.jpg',
         correct: 1
     },
 
@@ -34,6 +36,7 @@ export const questionsMarvel = [
             "Закон збереження імпульсу",
             "Закон Архімеда"
         ],
+        image:'https://assetsio.gnwcdn.com/marvels-spider-man-raimi-suit.jpg?width=1200&height=630&fit=crop&enable=upscale&auto=webp',
         correct: 0
     },
 
@@ -45,6 +48,7 @@ export const questionsMarvel = [
             "Его",
             "Колекціонер"
         ],
+        image:'https://wallpaperaccess.com/full/4674.jpg',
         correct: 0
     },
 
@@ -56,6 +60,7 @@ export const questionsMarvel = [
             "Обидві",
             "Жодну"
         ],
+        image:'https://wallpapersok.com/images/hd/scratched-captain-america-shield-1dc09wgkz8n8ghmj.jpg',
         correct: 1
     },
 
@@ -68,6 +73,7 @@ export const questionsMarvel = [
             "Битва на Титані",
             "Смерть Локі"
         ],
+        image:'https://wallpaperaccess.com/full/4791066.jpg',
         correct: 2
     },
 
@@ -79,6 +85,7 @@ export const questionsMarvel = [
             "Нічию",
             "Стіва Роджерса"
         ],
+        image:'https://wallpaperaccess.com/full/904753.jpg',
         correct: 2
     },
 
@@ -90,6 +97,7 @@ export const questionsMarvel = [
             "Хела",
             "Одін"
         ],
+        image:'https://wallpapercat.com/w/full/f/0/d/475409-3840x2160-desktop-4k-mjolnir-thor-background.jpg',
         correct: 1
     },
 
@@ -101,6 +109,7 @@ export const questionsMarvel = [
             "Невиліковна пухлина мозку",
             "Лімфома"
         ],
+        image:'https://wallpaperaccess.com/full/121821.png',
         correct: 1
     },
 
@@ -112,6 +121,7 @@ export const questionsMarvel = [
             "Бетті",
             "Омега"
         ],
+        image:'https://wallpaperaccess.com/full/3421001.jpg',
         correct: 0
     }
 

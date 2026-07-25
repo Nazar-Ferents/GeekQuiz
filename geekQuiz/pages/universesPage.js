@@ -21,8 +21,8 @@ export function renderUniverses (){
     const wrapper = document.createElement("div");
     wrapper.classList.add("wrapper");
 
-    for (let universe of universes){
-        let universeTitle = document.createElement("p");
+    for (const universe of universes){
+        const universeTitle = document.createElement("p");
         universeTitle.classList.add("universeTitle");
         universeTitle.textContent = universe.title;
 
@@ -36,6 +36,7 @@ export function renderUniverses (){
         const img = document.createElement("img");
         img.classList.add("img");
         img.src=universe.image;
+        img.alt= universe.title;
 
         universeDiv.addEventListener("click", ()=>{
             resetScore()

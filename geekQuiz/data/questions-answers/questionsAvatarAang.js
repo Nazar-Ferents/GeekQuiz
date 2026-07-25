@@ -22,12 +22,12 @@ export const questionsAvatarAang = [
         questionTitle: "Як називалась столиця Царства Землі?",
         answers: [
             "Омашу",
-            "Ба Сінґ Се",
             "Гаолін",
-            "Ю Дао"
+            "Ю Дао",
+            "Ба Сінґ Се"
         ],
         image:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-mom8PP9c4AR5UgXeaMOwkhm44tq29O8PWV0j5HctB5rr4y5Y2nlsZuA&s=10',
-        correct: 1
+        correct: 3
     },
     {
         questionTitle: "Хто навчив Айро перенаправляти блискавку?",
@@ -55,12 +55,12 @@ export const questionsAvatarAang = [
         questionTitle: "Чому Аанг утік із храму повітряних кочівників перед початком війни?",
         answers: [
             "Посварився з ченцями",
-            "Не хотів бути Аватаром",
             "Хотів знайти батьків",
-            "Хотів втекти від війни"
+            "Хотів втекти від війни",
+            "Не хотів бути Аватаром"
         ],
         image:'https://wallpaperaccess.com/full/1372003.jpg',
-        correct: 1
+        correct: 3
     },
     {
         questionTitle: "Як звали драконів, які навчили Зуко та Аанга справжньої магії вогню?",
@@ -72,12 +72,12 @@ export const questionsAvatarAang = [
         questionTitle: "Який аватар був предком Азули?",
         answers: [
             "Кіоші",
-            "Року",
             "Жоден",
+            "Року",
             "Янгчен"
         ],
         image:'https://cdna.artstation.com/p/assets/images/images/093/226/678/large/fahmi-fauzi-azul-posts.webp?1761925992',
-        correct: 1
+        correct: 2
     },
     {
         questionTitle: "Яке ім'я мав син Айро?",
@@ -92,8 +92,8 @@ export const questionsAvatarAang = [
     },
     {
         questionTitle: "Хто був першим аватаром в історії світу?",
-        answers: ["Року", "Ван", "Курок", "Янгчен"],
+        answers: ["Року",  "Курок","Ван", "Янгчен"],
         image:'https://wallpaperaccess.com/full/1372074.jpg',
-        correct: 1
+        correct: 2
     }
 ]

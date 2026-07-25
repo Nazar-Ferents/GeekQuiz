@@ -36,6 +36,18 @@ body{
     }
 
 }
+
+@keyframes progressShine{
+
+    from{
+        left:-40%;
+    }
+
+    to{
+        left:120%;
+    }
+
+}
 /* -------------------------------------WELCOME PAGE------------------------------------- */
 
 
@@ -45,6 +57,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
 }
 
 .title{
@@ -73,6 +86,10 @@ body{
 }
 
 .start-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
     text-align: center;
     width: 260px;
     height: 62px;
@@ -104,6 +121,14 @@ body{
     transform:translateY(1px);
     background-color: #1D4ED8;
     box-shadow: 0 6px 14px rgba(37,99,235,.2);
+}
+
+.start-button span{
+    transition: transform .25s ease;
+}
+
+.start-button:hover span{
+    transform: translateX(4px);
 }
 
 /* -----------------------------------UNIVERSES PAGE----------------------------------------- */
@@ -203,6 +228,12 @@ body{
     height: 100%;
     object-fit: cover;
     display: block;
+    transition:
+            transform .45s ease;
+}
+
+.universeDiv:hover .img{
+    transform: scale(1.04);
 }
 .overlay{
     position: absolute;
@@ -221,11 +252,11 @@ body{
             rgba(0,0,0,.25) 75%,
             rgba(0,0,0,0) 100%
     );
+    pointer-events:none;
 
 }
 .universeTitle{
     width: 70%;
-    flex-wrap: wrap;
     font-size: 22px;
     font-weight: 700;
     color: #F8FAFC;
@@ -304,10 +335,337 @@ body{
             0 0 56px rgba(251, 146, 60, .36),
             0 0 92px rgba(180, 83, 9, .28);
 }
-/* =========================
-   QUIZ PAGE
-========================= */
+/* --------------------------------------------------QUIZ PAGE----------------------------------- */
 
-/* =========================
-   RESULTS PAGE
-========================= */
+.quizWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 900px;
+    margin: 40px auto 60px;
+}
+
+.questionWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: min(700px,100%);
+}
+
+.answerWrapper{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 18px;
+    width: 100%;
+}
+
+.quiz-title{
+    font-size: 42px;
+    font-weight: 800;
+    color: #F8FAFC;
+    letter-spacing: 1px;
+    margin-bottom: 24px;
+    animation: fadeUp 0.6s ease-out;
+}
+
+.progressDiv{
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 24px;
+    animation: fadeUp 0.6s ease-out ;
+    animation-delay: 0.2s;
+    animation-fill-mode: backwards;
+}
+
+.progressBar{
+    width:100%;
+    height:14px;
+    background:#1E293B;
+    border-radius:999px;
+    overflow:hidden;
+    box-shadow:
+            inset 0 2px 4px rgba(0,0,0,.25);
+
+}
+
+.progressFill{
+    height:100%;
+    background: linear-gradient(
+            90deg,
+            #2563EB 0%,
+            #3B82F6 45%,
+            #60A5FA 100%
+    );
+    border-radius:999px;
+    transition:width .35s ease;
+        position: relative;
+        overflow: hidden;
+
+
+}
+
+.progressFill::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -40%;
+    width: 40%;
+    height: 100%;
+    background: linear-gradient(
+            90deg,
+            transparent,
+            rgba(255,255,255,.45),
+            transparent
+    );
+    animation: progressShine 2.8s linear infinite;
+}
+
+
+.progress{
+    font-size: 16px;
+    font-weight: 600;
+    color: #94A3B8;
+    min-width: 48px;
+    text-align: right;
+}
+
+.quizImg{
+    width: 700px;
+    height: 390px;
+    object-fit: cover;
+    border-radius: 18px;
+    box-shadow:
+            0 18px 40px rgba(0,0,0,.35);
+    margin-bottom: 32px;
+    animation: fadeUp 0.6s ease-out ;
+    animation-delay: 0.4s;
+    animation-fill-mode: backwards;
+    display: block;
+}
+
+.question{
+    text-align: center;
+    color: #F8FAFC;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.35;
+    margin-bottom: 32px;
+    animation: fadeUp 0.6s ease-out ;
+    animation-delay: 0.4s;
+    animation-fill-mode: backwards;
+}
+
+.answer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90px;
+    padding: 18px 22px;
+    background: #1E293B;
+    border: 2px solid transparent;
+    border-radius: 18px;
+    color: #F8FAFC;
+    font-size: 19px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.4;
+    cursor: pointer;
+    user-select: none;
+    transition:
+            transform .25s ease,
+            background-color .2s ease,
+            border-color .2s ease,
+            box-shadow .2s ease,
+            filter .2s ease;
+    animation: fadeUp 0.6s ease-out ;
+    animation-delay: 0.6s;
+    animation-fill-mode: backwards;
+}
+
+.answer:hover{
+    transform: translateY(-3px);
+    background:#334155;
+    border-color:#3B82F6;
+    box-shadow:
+            0 10px 24px rgba(59,130,246,.22);
+
+}
+
+.answer:active{
+    transform: scale(.98);
+
+}
+
+.correct{
+    background:#14532D;
+    border-color:#22C55E;
+    color:white;
+    box-shadow:
+            0 0 22px rgba(34,197,94,.35);
+
+}
+
+.wrong{
+    background:#7F1D1D;
+    border-color:#EF4444;
+    color:white;
+    box-shadow:
+            0 0 18px rgba(239,68,68,.28);
+
+}
+
+.answer.disabled{
+    cursor:default;
+    pointer-events:none;
+
+}
+
+
+
+/* ------------------------------------RESULTS PAGE---------------------------------- */
+
+.resultWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width:900px;
+    margin:70px auto 60px;
+    gap:28px;
+}
+
+.universe-title{
+    font-size:52px;
+    font-weight:800;
+    letter-spacing:1px;
+    color:#F8FAFC;
+    text-align:center;
+    animation:fadeUp .6s ease-out;}
+
+.counting{
+    font-size:22px;
+    font-weight:600;
+    color:#94A3B8;
+    animation:fadeUp .6s ease-out;
+    animation-delay:.15s;
+    animation-fill-mode:backwards;
+}
+
+.result{
+    font-size:110px;
+    font-weight:900;
+    line-height:1;
+    letter-spacing:-2px;
+    background:linear-gradient(
+            180deg,
+            #F8FAFC,
+            #60A5FA
+    );
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    background-clip:text;
+    text-shadow:
+            0 0 30px rgba(59,130,246,.18);
+    animation:fadeUp .6s ease-out;
+    animation-delay:.3s;
+    animation-fill-mode:backwards;}
+
+.divMessage{
+    max-width:620px;
+    padding:26px 34px;
+    border-radius:18px;
+    background:#1E293B;
+    color:#CBD5E1;
+    font-size:22px;
+    line-height:1.6;
+    font-weight:500;
+    text-align:center;
+    border:1px solid rgba(255,255,255,.05);
+    box-shadow:
+            0 18px 35px rgba(0,0,0,.25);
+    animation:fadeUp .6s ease-out;
+    animation-delay:.45s;
+    animation-fill-mode:backwards;
+}
+
+.buttonWrapper{
+    display:flex;
+    gap:18px;
+
+    margin-top:12px;
+
+    flex-wrap:wrap;
+    justify-content:center;
+    flex-direction: row;
+
+    animation:fadeUp .6s ease-out;
+    animation-delay:.6s;
+    animation-fill-mode:backwards;
+}
+
+.resultPageButton{
+    min-width:220px;
+
+    padding:16px 24px;
+
+    border:none;
+    border-radius:16px;
+
+    font-size:18px;
+    font-weight:700;
+
+    cursor:pointer;
+
+    background:#2563EB;
+    color:white;
+    white-space: nowrap;
+
+    transition:
+            transform .25s ease,
+            box-shadow .25s ease,
+            background-color .25s ease;
+}
+
+.resultPageButton:hover{
+    transform:translateY(-3px);
+
+    background:#3B82F6;
+
+    box-shadow:
+            0 14px 26px rgba(37,99,235,.35);
+}
+
+.resultPageButton:active{
+    transform:translateY(1px);
+
+    background:#1D4ED8;
+}
+
+.resultPageButton.secondary{
+    background: #2e579a;
+    color:#F8FAFC;
+
+    border:1px solid rgba(255,255,255,.08);
+}
+
+.resultPageButton.secondary:hover{
+    background: #096bef;
+}
+
+.resultPageButton.playAgainButton{
+    min-width:280px;
+    background:#2563EB;
+    font-size:20px;
+    font-weight:700;
+    box-shadow:
+            0 10px 30px rgba(37,99,235,.35);
+
+}
+
+
+

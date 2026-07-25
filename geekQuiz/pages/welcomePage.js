@@ -8,7 +8,7 @@ export function renderWelcome(){
     const welcomeWrapper = document.createElement('div')
     welcomeWrapper.classList.add('welcomeWrapper')
 
-    let h1 = document.createElement("h1");
+    const h1 = document.createElement("h1");
     h1.classList.add("title");
     h1.innerText = 'GeekQuiz'
 
@@ -17,7 +17,7 @@ export function renderWelcome(){
     p.textContent = 'Перевір свої знання\n' + 'улюблених всесвітів'
 
 
-    let button = document.createElement("button");
+    const button = document.createElement("button");
     button.classList.add("start-button");
     button.innerHTML =  `Почати <span>▶</span>`
 

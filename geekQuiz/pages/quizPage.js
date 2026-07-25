@@ -72,6 +72,7 @@ export function renderQuiz(universe,index){
 
                 answerElements[currentQuestion.correct].classList.add("correct");
 
+
                 if (i !== currentQuestion.correct){
                     answerElement.classList.add("wrong");
                 }
@@ -80,6 +81,7 @@ export function renderQuiz(universe,index){
                 }
 
                 answered = true;
+
 
             answerElements.forEach(answer => {
                 answer.classList.add("disabled");

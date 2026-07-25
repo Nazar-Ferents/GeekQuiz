@@ -16,7 +16,7 @@ GeekQuiz is a single-page quiz application where users can test their knowledge 
 
 - HTML5
 - CSS3
-- Vanilla JavaScript (ES6 Modules)
+- JavaScript (ES6 Modules)
 
 ## 📚 Universes
 
@@ -53,7 +53,7 @@ Coming soon...
 Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/geekquiz.git
+git clone https://github.com/Nazar-Ferents/GeekQuiz.git
 ```
 
 Open the project folder:
@@ -75,4 +75,6 @@ Run the project using **Live Server** or open `index.html` in your browser.
 
 ## 👨‍💻 Author
 
-Created by Nazar Ferents.
+**Nazar Ferents**
+
+GitHub: https://github.com/Nazar-Ferents

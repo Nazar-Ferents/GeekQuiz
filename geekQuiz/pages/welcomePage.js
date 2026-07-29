@@ -14,7 +14,7 @@ export function renderWelcome(){
 
     const p = document.createElement("p");
     p.classList.add("greeting");
-    p.textntent = 'Перевір свої знання\n' + 'улюблених всесвітів'
+    p.textContent = 'Перевір свої знання улюблених всесвітів'
 
 
     const button = document.createElement("button");

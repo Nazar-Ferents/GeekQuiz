@@ -10,7 +10,7 @@ export function renderWelcome(){
 
     const h1 = document.createElement("h1");
     h1.classList.add("title");
-    h1.innerText = 'GeekQuiz-JS'
+    h1.innerText = 'GeekQuiz'
 
     const p = document.createElement("p");
     p.classList.add("greeting");
